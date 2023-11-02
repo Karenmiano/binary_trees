@@ -6,6 +6,7 @@
  */
 int binary_tree_is_full(const binary_tree_t *tree)
 {
+	/*internal nodes + 1 = leaves*/
 	if (binary_tree_nodes(tree) + 1 == binary_tree_leaves(tree))
 		return (1);
 	return (0);
